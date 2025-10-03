@@ -134,12 +134,14 @@ Node* DFS(Node* initial, int* cont){
   if(!initial) return NULL; 
   if(cont) *cont =0; 
 
-  List* pila = createList(); 
-  pushFront(pila, initial); 
+  Stack* S = createStack();
+  push(S, initial); 
 
   while(1){
-    Node* actual = popFront(pila); 
+    Node* actual = (Node*)top(S); 
     if(!actual) break; 
+    pop(S);
+
     if(cont) (*cont)++;
 
     if(is_final(actual)){
@@ -150,7 +152,7 @@ Node* DFS(Node* initial, int* cont){
 
     for(Node* h = first(hijos); h != NULL; h = next(hijos)){
       if(is_valid(h)){
-        pushFront(pila, h);
+        push(S, h);
       }
       else{
         free(h);

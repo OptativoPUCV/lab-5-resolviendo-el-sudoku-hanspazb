@@ -71,3 +71,9 @@ sudoku.c:141:20: error: void value not ignored as it ought to be
      Node* actual = popFront(pila);
                     ^~~~~~~~
 6c76265
+vi.,  3 de oct. de 2025 11:46:03: 
+ sudoku.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+ tests:  10|0
+total_score: 70/70
+e60ffb9
