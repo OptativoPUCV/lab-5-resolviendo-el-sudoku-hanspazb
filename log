@@ -21,3 +21,9 @@ vi.,  3 de oct. de 2025  0:02:58:
  tests:  5|3
 total_score: 35/70
 e110151
+vi.,  3 de oct. de 2025  0:04:28: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  6|2
+total_score: 45/70
+1a32968

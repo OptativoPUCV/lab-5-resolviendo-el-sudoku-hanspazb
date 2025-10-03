@@ -108,7 +108,12 @@ List* get_adj_nodes(Node* n){
     for(int valor = 1; valor <= 9; valor++){
       Node* hijo = copy(n); 
       hijo->sudo[fil][col] = valor; 
-      pushBack(list, hijo); 
+      if(is_valid(hijo)){
+        pushBack(list, hijo); 
+      }
+      else{
+        free(hijo);
+      }
     }
     return list;
 }
