@@ -135,7 +135,7 @@ Node* DFS(Node* initial, int* cont){
   if(cont) *cont =0; 
 
   List* pila = createList(); 
-  pushFront(pila, n); 
+  pushFront(pila, initial); 
 
   while(1){
     Node* actual = popFront(pila); 
