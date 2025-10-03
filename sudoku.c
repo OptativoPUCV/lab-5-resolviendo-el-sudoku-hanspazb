@@ -74,7 +74,7 @@ int is_valid(Node* n){
         int i = 3*(k/3) + (p/3);
         int j = 3*(k%3) + (p%3);
 
-        int v = n->sudo[i][k]; 
+        int v = n->sudo[i][j]; 
 
         if(v == 0) continue;
         if(v<0 || v>9) return 0; 
