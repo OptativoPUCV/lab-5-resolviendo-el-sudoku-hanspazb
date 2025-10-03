@@ -4,3 +4,14 @@ ju.,  2 de oct. de 2025 23:40:36:
  tests:  2|4
 total_score: 15/70
 3f0e54c
+vi.,  3 de oct. de 2025  0:01:59: 
+ sudoku.c | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:75:13: error: unused variable 'j' [-Werror=unused-variable]
+         int j = 3*(k%3) + (p%3);
+             ^
+cc1.exe: all warnings being treated as errors
+5ec01c3
