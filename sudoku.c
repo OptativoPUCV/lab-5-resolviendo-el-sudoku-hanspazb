@@ -131,7 +131,7 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  if(!n) return NULL; 
+  if(!initial) return NULL; 
   if(cont) *cont =0; 
 
   List* pila = createList(); 
@@ -159,7 +159,7 @@ Node* DFS(Node* initial, int* cont){
 
     free(actual); 
   }
-  
+
   return NULL;
 }
 

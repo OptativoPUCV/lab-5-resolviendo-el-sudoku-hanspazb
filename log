@@ -47,3 +47,17 @@ sudoku.c:141:20: error: void value not ignored as it ought to be
      Node* actual = popFront(pila);
                     ^~~~~~~~
 001c9ed
+vi.,  3 de oct. de 2025 11:36:59: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:138:19: error: 'n' undeclared (first use in this function)
+   pushFront(pila, n);
+                   ^
+sudoku.c:138:19: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:141:20: error: void value not ignored as it ought to be
+     Node* actual = popFront(pila);
+                    ^~~~~~~~
+8564000
