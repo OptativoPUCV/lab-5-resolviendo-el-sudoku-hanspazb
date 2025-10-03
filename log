@@ -33,3 +33,17 @@ vi.,  3 de oct. de 2025 11:30:01:
  tests:  7|1
 total_score: 55/70
 c27132f
+vi.,  3 de oct. de 2025 11:35:22: 
+ sudoku.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:134:7: error: 'n' undeclared (first use in this function)
+   if(!n) return NULL;
+       ^
+sudoku.c:134:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:141:20: error: void value not ignored as it ought to be
+     Node* actual = popFront(pila);
+                    ^~~~~~~~
+001c9ed

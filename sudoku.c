@@ -131,6 +131,35 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
+  if(!n) return NULL; 
+  if(cont) *cont =0; 
+
+  List* pila = createList(); 
+  pushFront(pila, n); 
+
+  while(1){
+    Node* actual = popFront(pila); 
+    if(!actual) break; 
+    if(cont) (*cont)++;
+
+    if(is_final(actual)){
+      return actual; 
+    }
+
+    List* hijos = get_adj_nodes(actual); 
+
+    for(Node* h = first(hijos); h != NULL; h = next(hijos)){
+      if(is_valid(h)){
+        pushFront(pila, h);
+      }
+      else{
+        free(h);
+      }
+    }
+
+    free(actual); 
+  }
+  
   return NULL;
 }
 
